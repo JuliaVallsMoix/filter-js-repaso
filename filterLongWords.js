@@ -7,6 +7,8 @@
 
 function filterLongWords(sentence, n) {
   //Solution here
+  let wordArray = sentence.split(' ');
+  wordArray.filter((word) => word.length > n)
 }
 
 console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4), [
